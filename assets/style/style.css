@@ -68,7 +68,7 @@
   border-radius: 4px;
   background-color: goldenrod;
   font-weight: bold;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 .hijo button:hover {
   background-color: #009d71;
@@ -189,3 +189,10 @@ h4 {
 
 /* Desde aqui parte el CSS de pociones*/
 
+.pocion {
+  transition: all 1s;
+  filter: grayscale(1);
+}
+.pocion:hover {
+  filter: grayscale(0);
+}
