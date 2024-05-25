@@ -55,6 +55,7 @@
   width: 15rem;
   height: 25rem;
   transition: all 1s;
+  margin-top: 15px;
 }
 .hijo:hover {
   width: 20rem;
@@ -85,6 +86,7 @@ h4 {
   background-color: #c4a484;
   text-align: center;
   width: 100%;
+  bottom: 0;
 }
 
 .cls-alinear-numeracion {
