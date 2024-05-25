@@ -20,9 +20,10 @@
 .nav {
   grid-area: nav;
   display: flex;
-  justify-content: end;
+  flex-direction: row;
   border: 1px solid lightgrey;
   background-color: mintcream;
+  justify-content: space-between;
 }
 .navbar {
   display: flex;
@@ -104,6 +105,51 @@ h4 {
   background-color: lightslategray;
   padding: 5px;
 }
+/* Desde aqui parte el CSS de pociones*/
+
+.pocion {
+  transition: all 1s;
+  filter: grayscale(1);
+}
+.pocion:hover {
+  filter: grayscale(0);
+}
+
+.extra {
+  animation-name: extra; /* Nombere de la animacion*/
+  animation-duration: 3s; /* duracion de la animacion*/
+  animation-iteration-count: infinite; /*repeticion*/
+  animation-direction: alternate; /*cuando comienza y cuando termina 0%-100% y regresa con animación*/
+  animation-fill-mode: none; /* que funciona antes y despues de la animación */
+  animation-timing-function: linear;
+}
+.extra:hover {
+  animation-play-state: paused;
+}
+
+@keyframes extra {
+  0% {
+    color: black;
+    transform: translateX(0);
+  }
+  20% {
+    color: red;
+    transform: translateX(150px);
+  }
+  50% {
+    color: green;
+    transform: translateX(300px);
+  }
+  80% {
+    color: purple;
+    transform: translateX(450px);
+  }
+  100% {
+    color: blue;
+    transform: translateX(600px);
+  }
+}
+
 @media (max-width: 576px) {
   /* Media Querie de Teléfono*/
   .containers {
@@ -125,7 +171,9 @@ h4 {
     font-size: 2rem;
   }
   .nav {
+    flex-direction: column;
     justify-items: center;
+    align-items: center;
   }
   .navbar {
     display: none;
@@ -137,6 +185,23 @@ h4 {
   .box {
     justify-items: center;
     gap: 10px;
+  }
+  @keyframes extra {
+    0% {
+      color: black;
+    }
+    20% {
+      color: red;
+    }
+    50% {
+      color: green;
+    }
+    80% {
+      color: purple;
+    }
+    100% {
+      color: blue;
+    }
   }
 }
 
@@ -180,19 +245,31 @@ h4 {
   .borger {
     display: none;
   }
+  .nav {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
   .box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
-}
-
-/* Desde aqui parte el CSS de pociones*/
-
-.pocion {
-  transition: all 1s;
-  filter: grayscale(1);
-}
-.pocion:hover {
-  filter: grayscale(0);
+  @keyframes extra {
+    0% {
+      color: black;
+    }
+    20% {
+      color: red;
+    }
+    50% {
+      color: green;
+    }
+    80% {
+      color: purple;
+    }
+    100% {
+      color: blue;
+    }
+  }
 }
