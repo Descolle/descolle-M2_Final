@@ -1,0 +1,187 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.containers {
+  display: grid;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  background-color: blue;
+  padding: 0px 60px;
+  text-align: center;
+  font-size: small;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: end;
+  border: 1px solid lightgrey;
+  background-color: mintcream;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: start;
+  background-color: lightgray;
+}
+.pociones {
+  margin-top: 30px;
+}
+.navbar li :hover {
+  color: blue;
+}
+.main {
+  grid-area: main;
+  justify-items: center;
+}
+.box {
+  display: grid;
+  justify-items: center;
+}
+.hijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid;
+  width: 15rem;
+  height: 25rem;
+  transition: all 1s;
+}
+.hijo:hover {
+  width: 20rem;
+  height: 30rem;
+}
+.hijo img {
+  width: 12rem;
+  height: 100%;
+}
+.hijo button {
+  border-radius: 4px;
+  background-color: goldenrod;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+.hijo button:hover {
+  background-color: #009d71;
+}
+
+h4 {
+  font-family: "MedievalSharp", cursive;
+  font-style: normal;
+  font-weight: bold;
+}
+.footer {
+  grid-area: footer;
+  background-color: #c4a484;
+  text-align: center;
+  width: 100%;
+}
+
+.cls-alinear-numeracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.cls-pagination {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.cls-pagination li {
+  display: inline;
+  border: 1px solid;
+  border-radius: 10%;
+  background-color: lightslategray;
+  padding: 5px;
+}
+@media (max-width: 576px) {
+  /* Media Querie de Teléfono*/
+  .containers {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    background-color: azure;
+  }
+  .header {
+    justify-content: space-evenly;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .borger {
+    display: flex;
+    font-size: 2rem;
+  }
+  .nav {
+    justify-items: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .box {
+    justify-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Media Querie de PC*/
+  .containers {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "navbar main main"
+      "footer footer footer";
+  }
+  .logo {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .borger {
+    display: none;
+  }
+  .box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  /* Media Querie de Tablet*/
+  .containers {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "navbar main"
+      "footer footer";
+  }
+  .logo {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .borger {
+    display: none;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
