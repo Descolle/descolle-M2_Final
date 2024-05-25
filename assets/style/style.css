@@ -25,6 +25,13 @@
   background-color: mintcream;
   justify-content: space-between;
 }
+.filtro1 {
+  display: flex;
+}
+.filtro2 {
+  display: flex;
+  flex-direction: row;
+}
 .navbar {
   display: flex;
   flex-direction: column;
