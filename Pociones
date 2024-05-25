@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+        <script
+          src="https://kit.fontawesome.com/5e3573f07d.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+          rel="stylesheet"
+        />
+        <title>GREMIO DE LA CIUDAD DE ORKALUT</title>
+      </head>
+      <body>
+        <div class="containers">
+          <div class="header">
+            <div><i class="fa-solid fa-khanda logo"></i></div>
+            <div>
+              <h1>MISIONES GREMIO DE AVENTUREROS</h1>
+            </div>
+            <div>
+              <i class="fa-solid fa-bars borger"></i>
+            </div>
+          </div>
+          <nav class="nav">
+            <p class="filtro-text">Ordenar Por:</p>
+            <select class="filtro-select" name="select">
+              <option value="value1">Recompensa</option>
+              <option value="value2">Dificultad Mayor a Menor</option>
+              <option value="value3">Dificultad Menor a Mayor</option>
+              <option value="value4">Destacados</option>
+            </select>
+          </nav>
+          <div class="navbar">
+            <div>
+              <ul>
+                <h3>Misiones</h3>
+                <li><a href="#">RANGO F </a> <span>(20)</span></li>
+                <li><a href="#">RANGO E</a> <span>(10)</span></li>
+                <li><a href="#">RANGO D</a> <span>(11)</span></li>
+                <li><a href="#">RANGO C</a> <span>(13)</span></li>
+                <li><a href="#">RANGO B</a> <span>(7)</span></li>
+                <li><a href="#">RANGO A</a> <span>(5)</span></li>
+                <li><a href="#">RANGO S</a> <span>(3)</span></li>
+              </ul>
+            </div>
+            <div class="pociones">
+              <ul>
+                <h3>Pociones</h3>
+                <li><a href="#">Resitencia</a> <span>(0)</span></li>
+                <li><a href="#">Ataque</a> <span>(15)</span></li>
+                <li><a href="#">Defensa</a> <span>(1)</span></li>
+                <li><a href="#">Velocidad</a> <span>(40)</span></li>
+                <li><a href="#">Curación</a> <span>(50)</span></li>
+                <li><a href="#">Mana</a> <span>(10)</span></li>
+              </ul>
+            </div>
+            <div>
+              <audio autoplay>
+                <source
+                  src="./assets/music/Medieval Fantasy Tavern _ D&D Fantasy Music and Ambience.mp3"
+                />
+              </audio>
+            </div>
+          </div>
+          <div class="main">
+            <div class="box">
+              <figure class="hijo">
+                <img src="./assets/img/goblin.png" alt="goblin" />
+                <figcaption>
+                  <h4>Mision de rango E</h4>
+                  <br />Cerca del pueblo de E-rantel se ha avistado un nido de
+                  goblin. Eliminad el nido antes de que ocurra una desgracia mayor
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/ogre.jpg" alt="Ogro" />
+                <figcaption>
+                  <h4>Mision de rango C</h4>
+                  <br />Se han avistado 2 ogros en el lago de la muralla
+                  sur-este.
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/DnD_Dragon.png" alt="Dragón" />
+                <figcaption>
+                  <h4>Mision de rango S</h4>
+                  <br />En la montañas cerca de la ciudad minera de Aglarond un
+                  dragón ha hecho su nido, imposibilitando la obtención de
+                  materiales
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/gato.jpg" alt="Michi" />
+                <figcaption>
+                  <h4>Mision de rango F</h4>
+                  <br />Nuevamente se ha perdido ''Peludo'' de la Señora Puff,
+                  encontradlo. Es un gato anaranjado que le gusta tomar el sol. fue
+                  visto por las cercanias de la panaderia
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/mazmorra.jpg" alt="Mazmo" />
+                <figcaption>
+                  <h4>Mision de rango B</h4>
+                  <br />Se ha descubierto una nueva mazmorra a la entrada del bosque
+                  cerca de RGYRE, se solicita un mapeo de la zona.
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/pueblo.jpg" alt="Lowtrak" />
+                <figcaption>
+                  <h4>Mision de rango C</h4>
+                  <br />
+                  Se han reportado desapariciones de niños en la ciudad de Lowtrak.
+                  Por favor descrubid y eliminar la causa y regresar los niños a sus
+                  familias.
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/planta.jpg" alt="Gracea" />
+                <figcaption>
+                  <h4>Mision de rango F</h4>
+                  <br />Se están necesitando 50 flores Gracea para la fabricación de
+                  pociones de curación
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+              <figure class="hijo">
+                <img src="./assets/img/cangrejo.jpg" alt="Rocaverde" />
+                <figcaption>
+                  <h4>Mision de rango C</h4>
+                  <br />Se necesitan 5 pinzas de cangrejo de rocaverde.
+                </figcaption>
+                <button>Aceptar Misión</button>
+              </figure>
+            </div>
+            <!--Numero Pagina-->
+            <div class="cls-alinear-numeracion">
+              <ul class="cls-pagination">
+                <li><a href="#"> &laquo; </a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p><i class="fa-regular fa-copyright"></i>By Tomás Corvalan</p>
+          <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-github"></i>
+        </div>
+      </body>
+    </html>    
